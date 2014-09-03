@@ -23,3 +23,4 @@ local.properties
 # TeXlipse plugin
 .texlipse
 target/
+inventory-web/src/main/resources/app.properties

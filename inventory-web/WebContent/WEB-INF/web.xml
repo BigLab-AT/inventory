@@ -19,8 +19,4 @@
 		<url-pattern>/rpi/*</url-pattern>
 	</servlet-mapping>
 
-	<context-param>
-		<param-name>xml-path</param-name>
-		<param-value>C:/Users/Thomas/Works/Software Development/Inventory/data</param-value>
-	</context-param>
 </web-app>

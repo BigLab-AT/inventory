@@ -1,0 +1,82 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+							 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<prerequisites>
+		<maven>3.0</maven>
+	</prerequisites>
+
+	<groupId>net.tepeka.inventory</groupId>
+	<artifactId>inventory-parent</artifactId>
+	<name>inventory</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<!-- @TODO add organization information-->
+	<organization>
+		<name/>
+		<url/>
+	</organization>
+
+	<!-- @TODO add licenses information-->
+	<licenses>
+		<license>
+			<name/>
+			<url/>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:git:https://github.com/tepeka/${github.name}.git</connection>
+		<developerConnection>scm:git:git@github.com:tepeka/${github.name}.git</developerConnection>
+		<url>http://github.com/tepeka/${github.name}</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<issueManagement>
+		<url>https://github.com/tepeka/${github.name}/issues</url>
+		<system>Github</system>
+	</issueManagement>
+
+	<!-- @TODO add pom description -->
+	<description/>
+	<inceptionYear>2014</inceptionYear>
+	<url>http://tepeka.github.io/${github.name}</url>
+
+	<developers>
+		<developer>
+			<id>tepeka</id>
+			<name>tepeka</name>
+			<email/>
+			<url>https://github.com/tepeka</url>
+		</developer>
+	</developers>
+
+	<properties>
+		<java.version>1.8</java.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<github.name>inventory</github.name>
+	</properties>
+
+	<modules>
+		<module>inventory-web</module>
+	</modules>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>${java.version}</source>
+						<target>${java.version}</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+</project>

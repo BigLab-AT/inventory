@@ -24,3 +24,6 @@ local.properties
 .texlipse
 target/
 inventory-web/src/main/resources/app.properties
+# intellij
+.idea/
+*.iml

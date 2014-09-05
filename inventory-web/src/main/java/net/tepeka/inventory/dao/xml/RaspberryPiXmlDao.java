@@ -10,6 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import javax.ws.rs.core.MediaType;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
@@ -26,7 +27,6 @@ public class RaspberryPiXmlDao implements RaspberryPiDao, DirectoryWatcherListen
 
   private static final String FILENAME_PREFIX = "rpi";
   private static final String FILE_ENDING = ".xml";
-  private static final String CONTENT_TYPE = "text/xml";
 
   private final Logger log = LogManager.getLogger(RaspberryPiXmlDao.class.getName());
   private final List<RaspberryPi> rpis;
@@ -53,7 +53,7 @@ public class RaspberryPiXmlDao implements RaspberryPiDao, DirectoryWatcherListen
     // -- update data
     loadDirectory();
     // -- start watcher
-    watcher = new DirectoryWatcher(dir, CONTENT_TYPE);
+    watcher = new DirectoryWatcher(dir, Arrays.asList(MediaType.TEXT_XML,MediaType.APPLICATION_XML));
     watcher.addFileChangeListener(this);
     watcher.start();
     log.info("Started filewatcher for directory " + path);

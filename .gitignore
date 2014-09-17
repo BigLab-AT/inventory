@@ -27,3 +27,4 @@ inventory-web/src/main/resources/app.properties
 # intellij
 .idea/
 *.iml
+.project

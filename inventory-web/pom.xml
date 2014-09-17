@@ -3,16 +3,14 @@
 
 	<parent>
 		<groupId>net.tepeka.inventory</groupId>
-		<artifactId>inventory-parent</artifactId>
+		<artifactId>inventory</artifactId>
 		<relativePath>../pom.xml</relativePath>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>net.tepeka.inventory</groupId>
 	<artifactId>inventory-web</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
 	<name>inventory-web</name>
 
 	<properties>

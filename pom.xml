@@ -9,7 +9,7 @@
 	</prerequisites>
 
 	<groupId>net.tepeka.inventory</groupId>
-	<artifactId>inventory-parent</artifactId>
+	<artifactId>inventory</artifactId>
 	<name>inventory</name>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>

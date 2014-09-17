@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<raspberryPi id="1">
+	<model>
+		<name>Model B</name>
+		<revision>Revision 2.0</revision>
+		<memory>512MB</memory>
+	</model>
+	<possession owner="me">
+		<commissioned />
+		<comment />
+		<purpose label="Your Purpose">
+			<description />
+			<references>
+				<reference />
+			</references>
+		</purpose>
+	</possession>
+	<order date="2001-01-01T00:00:00+02:00">
+		<shop />
+		<comment />
+	</order>
+</raspberryPi>

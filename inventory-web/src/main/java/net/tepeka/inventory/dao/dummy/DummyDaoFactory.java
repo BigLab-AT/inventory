@@ -34,6 +34,10 @@ public class DummyDaoFactory {
       public RaspberryPi create() {
         return null;
       }
+
+      @Override
+      public void stop() {
+      }
 		};
 	}
 }

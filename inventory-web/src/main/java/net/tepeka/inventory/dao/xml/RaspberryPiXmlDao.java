@@ -113,6 +113,12 @@ public class RaspberryPiXmlDao implements RaspberryPiDao, DirectoryWatcherListen
   }
 
   @Override
+  public void stop() {
+    watcher.stop();
+    log.info("filewatcher stopped");
+  }
+
+  @Override
   public void fileModified(Path path) {
     try {
       RaspberryPi rpi = parseFile(path.toFile());

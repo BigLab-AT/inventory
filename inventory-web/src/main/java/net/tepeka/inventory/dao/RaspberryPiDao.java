@@ -16,4 +16,5 @@ public interface RaspberryPiDao {
   
   void update(RaspberryPi rpi);
 
+  void stop();
 }

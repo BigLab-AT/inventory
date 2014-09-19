@@ -28,6 +28,7 @@ public class DirectoryWatcher {
   private final WatchService ws;
   private final Path dir;
   private final List<String> contentTypes;
+  private final ExecutorService service;
 
   public DirectoryWatcher(Path dir, String contentType) throws IOException {
     this(dir, new ArrayList<String>(Arrays.asList(contentType)));
@@ -39,6 +40,7 @@ public class DirectoryWatcher {
     listener = new ArrayList<>();
     ws = FileSystems.getDefault().newWatchService();
     dir.register(ws, ENTRY_CREATE, ENTRY_DELETE, ENTRY_MODIFY);
+    service = Executors.newCachedThreadPool();
   }
 
   public void addFileChangeListener(DirectoryWatcherListener listener) {
@@ -50,7 +52,6 @@ public class DirectoryWatcher {
   }
 
   public void start() {
-    ExecutorService service = Executors.newCachedThreadPool();
     service.submit(new Runnable() {
       @Override
       public void run() {
@@ -101,7 +102,8 @@ public class DirectoryWatcher {
   }
 
   public void stop() {
-
+    log.info("stop directory watcher");
+    service.shutdownNow();
   }
 
   @SuppressWarnings("unchecked")

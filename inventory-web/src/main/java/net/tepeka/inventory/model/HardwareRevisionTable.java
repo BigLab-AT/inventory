@@ -47,7 +47,22 @@ public final class HardwareRevisionTable {
         "Model B+", 
         "", 
         "512MB", 
-        "0010")
+        "0010"),
+    new HardwareRevision(
+        "Compute Module",
+        "",
+        "512MB",
+        "0011"),
+    new HardwareRevision(
+        "Model A+",
+        "",
+        "256MB",
+        "0012"),
+    new HardwareRevision(
+        "Pi 2 Model B",
+        "",
+        "1GB",
+        "a01041")
   };
   //@formatter:on
 

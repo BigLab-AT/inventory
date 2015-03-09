@@ -17,7 +17,7 @@
 	
 	<servlet-mapping>
 		<servlet-name>Jersey</servlet-name>
-		<url-pattern>/rpi/*</url-pattern>
+		<url-pattern>/service/*</url-pattern>
 	</servlet-mapping>
-	
+
 </web-app>

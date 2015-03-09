@@ -22,7 +22,7 @@ import net.tepeka.inventory.model.RaspberryManager;
 
 import org.glassfish.jersey.message.XmlHeader;
 
-@Path("/")
+@Path("rpi")
 public class RaspberryPiResource {
 
   @Context

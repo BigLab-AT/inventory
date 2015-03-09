@@ -7,6 +7,10 @@ body {
 	color: #000;
 }
 
+#version-tag {
+    height: 30px;
+}
+
 .clear {
 	clear: both;
 }
@@ -85,7 +89,7 @@ a.button {
 }
 
 #panelwrap {
-	width: 1000px;
+	width: 800px;
 	margin: 20px auto;
 	background-color: #FFFFFF;
 	-moz-border-radius: 10px;
@@ -141,12 +145,12 @@ a.button {
 }
 
 .header_right a.settings {
-	background: url(images/settings.png) no-repeat left;
+	/*background: url(images/settings.png) no-repeat left;*/
 	padding: 0 0 0 22px;
 }
 
 .header_right a.logout {
-	background: url(images/logout.png) no-repeat left;
+	/*background: url(images/logout.png) no-repeat left;*/
 	padding: 0 0 0 22px;
 }
 
@@ -450,8 +454,40 @@ a.button {
 	border-bottom-right-radius: 6px;
 }
 
-.rounded-corner tbody tr:hover td {
+
+/* Row Coloring
+/*------------------------------------------*/
+
+.rounded-corner tbody .back-lightblue .note {
 	background: #dde8f0;
+}
+
+.rounded-corner tbody .back-lightblue:hover td {
+    background: #dde8f0;
+}
+
+.rounded-corner tbody .back-lightred .note {
+    background-color: #FDD;
+}
+
+.rounded-corner tbody .back-lightred:hover td {
+    background-color: #FDD;
+}
+
+.rounded-corner tbody .back-lightgreen .note {
+    background-color: #DDF0DD;
+}
+
+.rounded-corner tbody .back-lightgreen:hover td {
+    background-color: #DDF0DD;
+}
+
+.rounded-corner tbody .back-lightgrey .note {
+    background-color: #DDD;
+}
+
+.rounded-corner tbody .back-lightgrey:hover td {
+    background-color: #DDD;
 }
 
 /* Toggle

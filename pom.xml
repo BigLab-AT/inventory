@@ -11,7 +11,7 @@
 	<groupId>net.tepeka.inventory</groupId>
 	<artifactId>inventory</artifactId>
 	<name>inventory</name>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<!-- @TODO add organization information-->
@@ -62,7 +62,7 @@
 
 	<modules>
 		<module>inventory-web</module>
-	</modules>
+    </modules>
 
 	<build>
 		<pluginManagement>

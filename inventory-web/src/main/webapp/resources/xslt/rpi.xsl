@@ -100,7 +100,7 @@
 									</p>
 								</xsl:if>
 								<div class="form_sub_buttons">
-									<a class="button green" href="/inventory/rpi">
+									<a class="button green" href="/inventory/service/rpi">
 										<xsl:text>see all</xsl:text>
 									</a>
 								</div>
@@ -179,6 +179,7 @@
 				</b>
 			</td>
 		</tr>
+        <xsl:if test="revision != ''">
 		<tr>
 			<td>
 				<b>
@@ -186,6 +187,7 @@
 				</b>
 			</td>
 		</tr>
+        </xsl:if>
 		<tr>
 			<td>
 				<xsl:text>Memory </xsl:text>

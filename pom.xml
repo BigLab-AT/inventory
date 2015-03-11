@@ -1,7 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-							 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0         http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<prerequisites>
@@ -11,20 +8,20 @@
 	<groupId>net.tepeka.inventory</groupId>
 	<artifactId>inventory</artifactId>
 	<name>inventory</name>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 	<packaging>pom</packaging>
 
 	<!-- @TODO add organization information-->
 	<organization>
-		<name/>
-		<url/>
+		<name />
+		<url />
 	</organization>
 
 	<!-- @TODO add licenses information-->
 	<licenses>
 		<license>
-			<name/>
-			<url/>
+			<name />
+			<url />
 		</license>
 	</licenses>
 
@@ -32,7 +29,7 @@
 		<connection>scm:git:https://github.com/tepeka/${github.name}.git</connection>
 		<developerConnection>scm:git:git@github.com:tepeka/${github.name}.git</developerConnection>
 		<url>http://github.com/tepeka/${github.name}</url>
-		<tag>HEAD</tag>
+		<tag>inventory-1.0.1</tag>
 	</scm>
 
 	<issueManagement>
@@ -41,7 +38,7 @@
 	</issueManagement>
 
 	<!-- @TODO add pom description -->
-	<description/>
+	<description />
 	<inceptionYear>2014</inceptionYear>
 	<url>http://tepeka.github.io/${github.name}</url>
 
@@ -49,7 +46,7 @@
 		<developer>
 			<id>tepeka</id>
 			<name>tepeka</name>
-			<email/>
+			<email />
 			<url>https://github.com/tepeka</url>
 		</developer>
 	</developers>

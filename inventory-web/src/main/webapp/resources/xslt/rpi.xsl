@@ -7,7 +7,7 @@
 	<xsl:template match="raspberryPi">
 		<html>
 			<head>
-				<title>My Raspberry Pi Inventory</title>
+				<title>Inventory</title>
 				<link href="/inventory/resources/styles/basic.css" rel="stylesheet"
 					type="text/css" />
 			</head>
@@ -15,11 +15,13 @@
 				<div id="panelwrap">
 					<div class="header">
 						<div class="title">
+
 							<h1>
+                                <img src="/inventory/service/qrcode/https%3A%2F%2Ftepeka.net%2Finventory%2Fservice%2Frpi%2F{@id}/100" />
 								<xsl:text>Raspberry Pi #</xsl:text>
 								<xsl:value-of select="@id" />
 								<xsl:if test="possession/@owner != 'me'">
-									<xsl:text> (owned by </xsl:text>
+									<xsl:text> (owner: </xsl:text>
 									<xsl:value-of select="possession/@owner" />
 									<xsl:text>)</xsl:text>
 								</xsl:if>

@@ -9,6 +9,8 @@ body {
 
 #version-tag {
     height: 30px;
+    width: 400px;
+    border: none;
 }
 
 .clear {

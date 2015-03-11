@@ -55,7 +55,7 @@
                                         </tr>
                                     </tfoot>
                                 </table>
-                                <object id="version-tag" data="version" type="text/plain"/>
+                                <iframe id="version-tag" src="/inventory/service/version?pre=application%20version%20is%20" />
                             </div>
                         </div>
                     </div>
